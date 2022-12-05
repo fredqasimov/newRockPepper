@@ -33,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 .paper{
     border: 2px solid black;
@@ -42,6 +43,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
+
 }
 .scissors{
     border: 2px solid black;
@@ -51,6 +54,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
+
 }
 .scoreTable{
     display: flex;
@@ -62,6 +67,9 @@ body {
     font-size: 30px;
 }
 .pcScore{
+    font-size: 30px;
+}
+.refresh{
     font-size: 30px;
 }
 .winnerMessage{
@@ -81,4 +89,9 @@ body {
 }
 .cSelect{
     font-size: 50px;
+}
+button{
+    font-size: 15px;
+    background-color: black;
+    color: bisque;
 }

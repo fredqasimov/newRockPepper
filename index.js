@@ -7,6 +7,7 @@ const pcScore = document.querySelector('.pcScore')
 const header = document.querySelector('.header')
 const pSelect = document.querySelector('.pSelect')
 const cSelect = document.querySelector('.cSelect')
+const refresh = document.querySelector('.refresh')
 
 
 let player=0
@@ -109,6 +110,18 @@ function playScissors(){
 
 }
 
+function refreshGame(){
+    cSelect.innerHTML = '🤝'
+    pSelect.innerHTML = '🤝'
+    player = 0
+    comp = 0
+    pcScore.innerHTML = `PC:${comp}`
+    playerScore.innerHTML = `Player:${player}`
+    header.innerHTML = '<p>Choose Your Item</p>'
+    winnerMessage.innerHTML = 'Waiting For Selection...'
+}
+
 rock.addEventListener('click', playRock)
 paper.addEventListener('click', playPaper)
 scissors.addEventListener('click', playScissors)
+refresh.addEventListener('click', refreshGame)
